@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/ryohidaka/action-commit-push/compare/v0.1.0...v0.1.1) (2024-10-04)
+
+
+### Bug Fixes
+
+* Change icon ([15d8bfb](https://github.com/ryohidaka/action-commit-push/commit/15d8bfbc50df39c784908a24e7de0a882f4a3889))
+
 ## 0.1.0 (2024-10-04)
 
 
