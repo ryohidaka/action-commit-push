@@ -23,13 +23,15 @@ jobs:
           commit-user-name: "GitHub Actions"
           commit-user-email: "actions@github.com"
           commit-message: "chore: autopublish"
+          dry-run: false
 ```
 
 ## Inputs
 
-| Input               | Description      | Default              |
-| ------------------- | ---------------- | -------------------- |
-| `files`             | Files to commit. | `.`                  |
-| `commit-user-name`  | Commit username. | `GitHub Actions`     |
-| `commit-user-email` | Commit email.    | `actions@github.com` |
-| `commit-message`    | Commit message.  | `chore: autopublish` |
+| Input               | Description                              | Default              |
+| ------------------- | ---------------------------------------- | -------------------- |
+| `files`             | Files to commit.                         | `.`                  |
+| `commit-user-name`  | Commit username.                         | `GitHub Actions`     |
+| `commit-user-email` | Commit email.                            | `actions@github.com` |
+| `commit-message`    | Commit message.                          | `chore: autopublish` |
+| `dry-run`           | If true, the push steps will be skipped. | `false`              |
