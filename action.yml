@@ -1,8 +1,8 @@
-name: "action-commit-push"
+name: "Simple Commit and Push"
 
 author: "ryohidaka"
 
-description: "GitHub Actions for commiting %DESCRIPTION% pushing to GitHub repository local changes."
+description: "GitHub Actions for commiting & pushing to GitHub repository local changes."
 
 branding:
   color: green
