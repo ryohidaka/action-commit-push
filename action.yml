@@ -24,6 +24,11 @@ inputs:
     default: "actions@github.com"
     description: "Commit email. Defaults to 'actions@github.com'."
 
+  commit-message:
+    required: false
+    default: "chore: autopublish"
+    description: "Commit message. Defaults to 'chore: autopublish'."
+
 runs:
   using: "composite"
   steps:
@@ -42,7 +47,15 @@ runs:
       shell: bash
 
     - name: Staging And Check Diff
+      id: check_diff
       run: |
         $GITHUB_ACTION_PATH/scripts/check_diff.sh \
           "${{ inputs.files }}"
+      shell: bash
+
+    - name: Commit
+      if: steps.check_diff.outcome != 'success' # Skip if no changes
+      run: |
+        $GITHUB_ACTION_PATH/scripts/commit.sh \
+          "${{ inputs.commit-message }}"
       shell: bash

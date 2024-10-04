@@ -22,6 +22,7 @@ jobs:
           files: "."
           commit-user-name: "GitHub Actions"
           commit-user-email: "actions@github.com"
+          commit-message: "chore: autopublish"
 ```
 
 ## Inputs
@@ -31,3 +32,4 @@ jobs:
 | `files`             | Files to commit. | `.`                  |
 | `commit-user-name`  | Commit username. | `GitHub Actions`     |
 | `commit-user-email` | Commit email.    | `actions@github.com` |
+| `commit-message`    | Commit message.  | `chore: autopublish` |
