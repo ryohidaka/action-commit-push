@@ -9,6 +9,15 @@ branding:
   icon: send
 
 inputs:
+  commit-user-name:
+    required: false
+    default: "GitHub Actions"
+    description: "Commit username. Defaults to 'GitHub Actions'."
+
+  commit-user-email:
+    required: false
+    default: "actions@github.com"
+    description: "Commit email. Defaults to 'actions@github.com'."
 
 runs:
   using: "composite"
@@ -18,4 +27,11 @@ runs:
 
     - name: Set GitHub Path
       run: echo "GITHUB_ACTION_PATH=${GITHUB_ACTION_PATH}" >> $GITHUB_ENV
+      shell: bash
+
+    - name: Set Git Config
+      run: |
+        $GITHUB_ACTION_PATH/scripts/set_config.sh \
+          "${{ inputs.commit-user-name }}" \
+          "${{ inputs.commit-user-email }}"
       shell: bash

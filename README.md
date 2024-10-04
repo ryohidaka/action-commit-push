@@ -14,14 +14,18 @@ permissions:
   contents: write
 
 jobs:
+  commit-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ryohidaka/action-commit-push@v1
+        with:
+          commit-user-name: "GitHub Actions"
+          commit-user-email: "actions@github.com"
 ```
 
 ## Inputs
 
-| Input | Description | Required | Default |
-| ----- | ----------- | -------- | ------- |
-
-## Outputs
-
-| Output | Description | Example |
-| ------ | ----------- | ------- |
+| Input               | Description      | Default              |
+| ------------------- | ---------------- | -------------------- |
+| `commit-user-name`  | Commit username. | `GitHub Actions`     |
+| `commit-user-email` | Commit email.    | `actions@github.com` |
