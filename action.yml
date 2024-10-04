@@ -9,6 +9,11 @@ branding:
   icon: send
 
 inputs:
+  files:
+    description: "Files to commit. Defaults to '.'."
+    required: false
+    default: "."
+
   commit-user-name:
     required: false
     default: "GitHub Actions"
@@ -34,4 +39,10 @@ runs:
         $GITHUB_ACTION_PATH/scripts/set_config.sh \
           "${{ inputs.commit-user-name }}" \
           "${{ inputs.commit-user-email }}"
+      shell: bash
+
+    - name: Staging And Check Diff
+      run: |
+        $GITHUB_ACTION_PATH/scripts/check_diff.sh \
+          "${{ inputs.files }}"
       shell: bash

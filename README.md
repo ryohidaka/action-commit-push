@@ -19,6 +19,7 @@ jobs:
     steps:
       - uses: ryohidaka/action-commit-push@v1
         with:
+          files: "."
           commit-user-name: "GitHub Actions"
           commit-user-email: "actions@github.com"
 ```
@@ -27,5 +28,6 @@ jobs:
 
 | Input               | Description      | Default              |
 | ------------------- | ---------------- | -------------------- |
+| `files`             | Files to commit. | `.`                  |
 | `commit-user-name`  | Commit username. | `GitHub Actions`     |
 | `commit-user-email` | Commit email.    | `actions@github.com` |
