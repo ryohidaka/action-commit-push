@@ -14,27 +14,14 @@ permissions:
   contents: write
 
 jobs:
-  bump-uses:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: ryohidaka/action-commit-push@v1
-        with:
-          who-to-greet: "Mona the Octocat"
-
-      - run: echo random-number "$RANDOM_NUMBER"
-        shell: bash
-        env:
-          RANDOM_NUMBER: ${{ steps.foo.outputs.random-number }}
 ```
 
 ## Inputs
 
-| Input          | Description  | Required | Default |
-| -------------- | ------------ | -------- | ------- |
-| `who-to-greet` | Who to greet | ✅       | `World` |
+| Input | Description | Required | Default |
+| ----- | ----------- | -------- | ------- |
 
 ## Outputs
 
-| Output          | Description   | Example |
-| --------------- | ------------- | ------- |
-| `random-number` | Random number | `9999`  |
+| Output | Description | Example |
+| ------ | ----------- | ------- |
