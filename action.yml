@@ -6,7 +6,7 @@ description: "GitHub Actions for commiting & pushing to GitHub repository local 
 
 branding:
   color: green
-  icon: send
+  icon: git-commit
 
 inputs:
   files:
