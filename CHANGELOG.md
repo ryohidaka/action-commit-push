@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/ryohidaka/action-commit-push/compare/v0.1.1...v0.1.2) (2024-10-08)
+
+
+### Bug Fixes
+
+* Fixed a bug where the target file could not be referenced. ([5f4c483](https://github.com/ryohidaka/action-commit-push/commit/5f4c48349c8e076a0471c9da3226cdf2a92b5393))
+
 ## [0.1.1](https://github.com/ryohidaka/action-commit-push/compare/v0.1.0...v0.1.1) (2024-10-04)
 
 
