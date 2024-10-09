@@ -1,9 +1,6 @@
 #!/bin/bash
 set -e # Exit immediately if any command exits with a non-zero status
 
-# Change to root directory of repository
-cd "$GITHUB_WORKSPACE"
-
 # Get arguments from the inputs
 files="${1}"
 
