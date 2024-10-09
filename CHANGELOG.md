@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1](https://github.com/ryohidaka/action-commit-push/compare/v0.2.0...v0.2.1) (2024-10-09)
+
+
+### Bug Fixes
+
+* Fixed diff check process. ([c4d21a7](https://github.com/ryohidaka/action-commit-push/commit/c4d21a7b020f079910c60c93a2a1ad54ed8cdeee))
+* Revert "fix: Fixed a bug where the target file could not be referenced." ([8d5494d](https://github.com/ryohidaka/action-commit-push/commit/8d5494d149c8906632f208c566e2b08a4049b198))
+
 ## [0.2.0](https://github.com/ryohidaka/action-commit-push/compare/v0.1.2...v0.2.0) (2024-10-09)
 
 
