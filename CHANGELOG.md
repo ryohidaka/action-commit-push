@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://github.com/ryohidaka/action-commit-push/compare/v0.1.2...v0.2.0) (2024-10-09)
+
+
+### Features
+
+* Add process to output staged files. ([32baea9](https://github.com/ryohidaka/action-commit-push/commit/32baea978a55b377c3ab5f77db976fd792fb43af))
+
+
+### Bug Fixes
+
+* Remove step to checkout repository. ([1bd7545](https://github.com/ryohidaka/action-commit-push/commit/1bd754562750144a536c95ea06f7f375f288e2b1))
+
 ## [0.1.2](https://github.com/ryohidaka/action-commit-push/compare/v0.1.1...v0.1.2) (2024-10-08)
 
 
