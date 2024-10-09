@@ -12,8 +12,8 @@ git add "$files"
 
 # Check if there are any staged changes; exit if none
 if git diff --cached --exit-code >/dev/null; then
-	echo "::warning::No changes to commit. Skipping commit and push."
-	exit 0
+    echo "::warning::No changes to commit. Skipping commit and push."
+    exit 0
 fi
 
 # Output list of files with staged changes
