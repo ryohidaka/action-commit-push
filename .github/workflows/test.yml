@@ -13,6 +13,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Generate a random number and save to number.txt
+        run: echo $((RANDOM)) > number.txt
+
+      - name: Display the contents of number.txt
+        run: cat number.txt
+
       - uses: "./"
         with:
           dry-run: true
