@@ -9,10 +9,10 @@ git add "$files"
 
 # Check if there are any staged changes; exit if none
 if git diff --cached --exit-code >/dev/null; then
+    echo "changes=false" >> $GITHUB_OUTPUT
     echo "::warning::No changes to commit. Skipping commit and push."
-    exit 0
+else
+    echo "changes=true" >> $GITHUB_OUTPUT
+    echo "Staged files with changes:"
+    git diff --cached --name-only
 fi
-
-# Output list of files with staged changes
-echo "Staged files with changes:"
-git diff --cached --name-only

@@ -56,14 +56,14 @@ runs:
       shell: bash
 
     - name: Commit
-      if: steps.check_diff.outcome != 'success' # Skip if no changes
+      if: steps.check_diff.outputs.changes == 'true' # Skip if no changes
       run: |
         $GITHUB_ACTION_PATH/scripts/commit.sh \
           "${{ inputs.commit-message }}"
       shell: bash
 
     - name: Push
-      if: steps.check_diff.outcome != 'success' && inputs.dry-run == 'false' # Skip if no changes
+      if: steps.check_diff.outputs.changes == 'true' && inputs.dry-run != 'true' # Skip if no changes
       run: |
         $GITHUB_ACTION_PATH/scripts/push.sh
       shell: bash
