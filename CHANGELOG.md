@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/ryohidaka/action-commit-push/compare/v0.2.1...v0.3.0) (2024-10-10)
+
+
+### Features
+
+* Add rebase option to push script. ([d2f589c](https://github.com/ryohidaka/action-commit-push/commit/d2f589c213ea88888b9d2e14962a7c03d585d168))
+
 ## [0.2.1](https://github.com/ryohidaka/action-commit-push/compare/v0.2.0...v0.2.1) (2024-10-09)
 
 
