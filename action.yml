@@ -29,6 +29,11 @@ inputs:
     default: "chore: autopublish"
     description: "Commit message. Defaults to 'chore: autopublish'."
 
+  rebase:
+    required: false
+    default: "false"
+    description: "If true, `git pull --rebase` is used before the push. Defaults to 'false'"
+
   dry-run:
     required: false
     default: "false"
@@ -65,5 +70,5 @@ runs:
     - name: Push
       if: steps.check_diff.outputs.changes == 'true' && inputs.dry-run != 'true' # Skip if no changes
       run: |
-        $GITHUB_ACTION_PATH/scripts/push.sh
+        $GITHUB_ACTION_PATH/scripts/push.sh "${{ inputs.rebase }}"
       shell: bash

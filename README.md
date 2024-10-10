@@ -23,15 +23,17 @@ jobs:
           commit-user-name: "GitHub Actions"
           commit-user-email: "actions@github.com"
           commit-message: "chore: autopublish"
+          rebase: true
           dry-run: false
 ```
 
 ## Inputs
 
-| Input               | Description                              | Default              |
-| ------------------- | ---------------------------------------- | -------------------- |
-| `files`             | Files to commit.                         | `.`                  |
-| `commit-user-name`  | Commit username.                         | `GitHub Actions`     |
-| `commit-user-email` | Commit email.                            | `actions@github.com` |
-| `commit-message`    | Commit message.                          | `chore: autopublish` |
-| `dry-run`           | If true, the push steps will be skipped. | `false`              |
+| Input               | Description                                           | Default              |
+| ------------------- | ----------------------------------------------------- | -------------------- |
+| `files`             | Files to commit.                                      | `.`                  |
+| `commit-user-name`  | Commit username.                                      | `GitHub Actions`     |
+| `commit-user-email` | Commit email.                                         | `actions@github.com` |
+| `commit-message`    | Commit message.                                       | `chore: autopublish` |
+| `rebase`            | If true, `git pull --rebase` is used before the push. | `false`              |
+| `dry-run`           | If true, the push steps will be skipped.              | `false`              |
