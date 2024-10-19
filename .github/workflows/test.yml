@@ -21,4 +21,5 @@ jobs:
 
       - uses: "./"
         with:
+          files: "number.txt"
           dry-run: true
