@@ -17,7 +17,7 @@ jobs:
   commit-push:
     runs-on: ubuntu-latest
     steps:
-      - uses: ryohidaka/action-commit-push@v0.2.1
+      - uses: ryohidaka/action-commit-push@v0.3.0
         with:
           files: "."
           commit-user-name: "GitHub Actions"
