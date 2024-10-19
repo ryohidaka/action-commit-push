@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/ryohidaka/action-commit-push/compare/v0.3.1...v0.3.2) (2024-10-19)
+
+
+### Bug Fixes
+
+* Ensure proper handling of filenames with spaces during git add ([0ff3a75](https://github.com/ryohidaka/action-commit-push/commit/0ff3a75b8b830e9986b043306d1e3d8e9997c461))
+
 ## [0.3.1](https://github.com/ryohidaka/action-commit-push/compare/v0.3.0...v0.3.1) (2024-10-19)
 
 
