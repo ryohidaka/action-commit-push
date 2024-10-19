@@ -17,9 +17,16 @@ jobs:
         run: echo $((RANDOM)) > number.txt
 
       - name: Display the contents of number.txt
-        run: cat number.txt
+        run: |
+          cat number.txt
+          cp number.txt number1.txt
 
       - uses: "./"
         with:
           files: "number.txt"
+          dry-run: true
+
+      - uses: "./"
+        with:
+          files: "number.txt number1.txt"
           dry-run: true
