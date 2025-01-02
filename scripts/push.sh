@@ -8,7 +8,7 @@ if [ "$1" == "true" ]; then
 fi
 
 # Set the branch to push if not provided as an argument
-BRANCH_NAME=${2:-${GITHUB_REF##*/}}  # Use input branch or default to current branch
+BRANCH_NAME=${2:-${GITHUB_REF##*/}} # Use input branch or default to current branch
 
 # Push the committed changes to the remote repository on the specified branch
 git push origin "$BRANCH_NAME"
