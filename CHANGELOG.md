@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/ryohidaka/action-commit-push/compare/v0.3.2...v0.4.0) (2025-01-02)
+
+
+### Features
+
+* Add inputs to specify branch to push to. ([5464118](https://github.com/ryohidaka/action-commit-push/commit/5464118b0455505369955a123a62d1341f54d247))
+
 ## [0.3.2](https://github.com/ryohidaka/action-commit-push/compare/v0.3.1...v0.3.2) (2024-10-19)
 
 
