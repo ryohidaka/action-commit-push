@@ -20,6 +20,7 @@ jobs:
       - uses: ryohidaka/action-commit-push@v0.3.1
         with:
           files: "."
+          branch: "main"
           commit-user-name: "GitHub Actions"
           commit-user-email: "actions@github.com"
           commit-message: "chore: autopublish"
@@ -32,6 +33,7 @@ jobs:
 | Input               | Description                                           | Default              |
 | ------------------- | ----------------------------------------------------- | -------------------- |
 | `files`             | Files to commit.                                      | `.`                  |
+| `branch`            | The branch to push changes to.                        | current branch       |
 | `commit-user-name`  | Commit username.                                      | `GitHub Actions`     |
 | `commit-user-email` | Commit email.                                         | `actions@github.com` |
 | `commit-message`    | Commit message.                                       | `chore: autopublish` |

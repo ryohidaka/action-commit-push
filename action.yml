@@ -2,7 +2,7 @@ name: "Simple Commit and Push"
 
 author: "ryohidaka"
 
-description: "GitHub Actions for commiting & pushing to GitHub repository local changes."
+description: "GitHub Actions for committing & pushing to GitHub repository local changes."
 
 branding:
   color: green
@@ -13,6 +13,11 @@ inputs:
     description: "Files to commit. Defaults to '.'."
     required: false
     default: "."
+
+  branch:
+    required: false
+    default: ""
+    description: "The branch to push changes to. Defaults to the current branch."
 
   commit-user-name:
     required: false
@@ -70,5 +75,7 @@ runs:
     - name: Push
       if: steps.check_diff.outputs.changes == 'true' && inputs.dry-run != 'true' # Skip if no changes
       run: |
-        $GITHUB_ACTION_PATH/scripts/push.sh "${{ inputs.rebase }}"
+        $GITHUB_ACTION_PATH/scripts/push.sh \
+          "${{ inputs.rebase }}" \
+          "${{ inputs.branch || github.ref_name }}"
       shell: bash

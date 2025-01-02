@@ -7,7 +7,10 @@ if [ "$1" == "true" ]; then
     git pull --rebase
 fi
 
-# Push the committed changes to the remote repository
-git push
+# Set the branch to push if not provided as an argument
+BRANCH_NAME=${2:-${GITHUB_REF##*/}}  # Use input branch or default to current branch
 
-echo "::notice::Push the committed changes to the remote repository."
+# Push the committed changes to the remote repository on the specified branch
+git push origin "$BRANCH_NAME"
+
+echo "::notice::Pushed the committed changes to the remote repository on branch $BRANCH_NAME."
