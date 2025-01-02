@@ -17,7 +17,7 @@ jobs:
   commit-push:
     runs-on: ubuntu-latest
     steps:
-      - uses: ryohidaka/action-commit-push@v0.3.2
+      - uses: ryohidaka/action-commit-push@v0.4.0
         with:
           files: "."
           branch: "main"
