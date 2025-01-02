@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/ryohidaka/action-commit-push/compare/v0.4.0...v0.4.1) (2025-01-02)
+
+
+### Bug Fixes
+
+* Ensure branch tracking information is set before rebase and push. ([7eff396](https://github.com/ryohidaka/action-commit-push/commit/7eff396662b68b2ad8ca06f7efe2280632e9c584))
+
 ## [0.4.0](https://github.com/ryohidaka/action-commit-push/compare/v0.3.2...v0.4.0) (2025-01-02)
 
 
