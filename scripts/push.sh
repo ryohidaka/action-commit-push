@@ -11,10 +11,11 @@ if [ "$1" == "true" ]; then
     git branch --set-upstream-to=origin/"$BRANCH_NAME" || true
 
     echo "::debug::Running git pull --rebase."
-    git pull --rebase origin "$BRANCH_NAME"
+    git pull --rebase origin "$BRANCH_NAME" || true
 fi
 
 # Push the committed changes to the remote repository on the specified branch
-git push origin "$BRANCH_NAME"
+echo "::debug::Pushing changes to branch $BRANCH_NAME."
+git push origin "$BRANCH_NAME" || git push -u origin "$BRANCH_NAME"
 
 echo "::notice::Pushed the committed changes to the remote repository on branch $BRANCH_NAME."
