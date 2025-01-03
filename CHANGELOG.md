@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/ryohidaka/action-commit-push/compare/v0.4.2...v0.5.0) (2025-01-03)
+
+
+### Features
+
+* Add inputs to force-push. ([f387ee0](https://github.com/ryohidaka/action-commit-push/commit/f387ee0673040b35936774dfa1b98579915f6875))
+
 ## [0.4.2](https://github.com/ryohidaka/action-commit-push/compare/v0.4.1...v0.4.2) (2025-01-03)
 
 
