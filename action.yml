@@ -39,6 +39,11 @@ inputs:
     default: "false"
     description: "If true, `git pull --rebase` is used before the push. Defaults to 'false'"
 
+  force-push:
+    required: false
+    default: "false"
+    description: "If true, `git push --force` is used. Defaults to 'false'"
+
   dry-run:
     required: false
     default: "false"
@@ -77,5 +82,6 @@ runs:
       run: |
         $GITHUB_ACTION_PATH/scripts/push.sh \
           "${{ inputs.rebase }}" \
-          "${{ inputs.branch || github.ref_name }}"
+          "${{ inputs.branch || github.ref_name }}" \
+          "${{ inputs.force-push }}"
       shell: bash
