@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/ryohidaka/action-commit-push/compare/v0.4.1...v0.4.2) (2025-01-03)
+
+
+### Bug Fixes
+
+* Ensure remote branch is created before pushing changes. ([8eca940](https://github.com/ryohidaka/action-commit-push/commit/8eca94079a00bbd140f639bba3a46a1f6e9727b8))
+
 ## [0.4.1](https://github.com/ryohidaka/action-commit-push/compare/v0.4.0...v0.4.1) (2025-01-02)
 
 
