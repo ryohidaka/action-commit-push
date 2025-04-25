@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/ryohidaka/action-commit-push/compare/v0.5.0...v0.6.0) (2025-04-25)
+
+
+### Features
+
+* Change default commit-user-name and commit-user-email. ([f4c11a9](https://github.com/ryohidaka/action-commit-push/commit/f4c11a9fa750564056f1d754f256247d6c103ec9))
+
 ## [0.5.0](https://github.com/ryohidaka/action-commit-push/compare/v0.4.2...v0.5.0) (2025-01-03)
 
 
