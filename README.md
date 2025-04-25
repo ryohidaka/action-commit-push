@@ -21,8 +21,8 @@ jobs:
         with:
           files: "."
           branch: "main"
-          commit-user-name: "GitHub Actions"
-          commit-user-email: "actions@github.com"
+          commit-user-name: "github-actions[bot]"
+          commit-user-email: "41898282+github-actions[bot]@users.noreply.github.com"
           commit-message: "chore: autopublish"
           rebase: true
           force-push: true
@@ -31,13 +31,13 @@ jobs:
 
 ## Inputs
 
-| Input               | Description                                              | Default              |
-| ------------------- | -------------------------------------------------------- | -------------------- |
-| `files`             | Files to commit.                                         | `.`                  |
-| `branch`            | The branch to push changes to.                           | current branch       |
-| `commit-user-name`  | Commit username.                                         | `GitHub Actions`     |
-| `commit-user-email` | Commit email.                                            | `actions@github.com` |
-| `commit-message`    | Commit message.                                          | `chore: autopublish` |
-| `rebase`            | If true, `git pull --rebase` is used before the push.    | `false`              |
-| `force-push`        | If true, `git push --force` is used. Defaults to 'false' | `false`              |
-| `dry-run`           | If true, the push steps will be skipped.                 | `false`              |
+| Input               | Description                                              | Default                                                 |
+| ------------------- | -------------------------------------------------------- | ------------------------------------------------------- |
+| `files`             | Files to commit.                                         | `.`                                                     |
+| `branch`            | The branch to push changes to.                           | current branch                                          |
+| `commit-user-name`  | Commit username.                                         | `github-actions[bot]`                                   |
+| `commit-user-email` | Commit email.                                            | `41898282+github-actions[bot]@users.noreply.github.com` |
+| `commit-message`    | Commit message.                                          | `chore: autopublish`                                    |
+| `rebase`            | If true, `git pull --rebase` is used before the push.    | `false`                                                 |
+| `force-push`        | If true, `git push --force` is used. Defaults to 'false' | `false`                                                 |
+| `dry-run`           | If true, the push steps will be skipped.                 | `false`                                                 |
